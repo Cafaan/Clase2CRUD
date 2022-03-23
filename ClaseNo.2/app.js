@@ -1,6 +1,6 @@
 //Eventos DOM (Document Object Model)
 document
-    .getElementById("formulario-producto")
+    .getElementById("producto-formulario")
     .addEventListener("submit", function (evento) {
         //Evaluar el comportamiento del formulario
 
@@ -10,7 +10,7 @@ document
 
         const nombre = document.getElementById("nombre").value,
             precio = document.getElementById("precio").value,
-            año = docmuent.getElementById("año").value;
+            año = document.getElementById("año").value;
 
         //Crear un nuevo objeto "producto"
 
@@ -86,6 +86,12 @@ document
             const app= document.querySelector("#App");
     
             //Insertar mensaje en el interfaz usuario
+            container.insertBefore(div, app);
+
+            //remover el mensaje luego de tres segundos
+            setTimeout(function(){
+                document.querySelector(".alert").remove();
+            },3000);
         }
     }
 

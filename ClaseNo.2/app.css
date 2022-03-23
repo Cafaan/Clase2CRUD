@@ -1,0 +1,26 @@
+
+.success, .error{
+    color:white;
+    padding: 5px;
+    margin: 5px 0 15 px 0;
+
+}
+.success{
+    background: green;
+}
+.error{
+    background: red;
+}
+
+.contenedor{
+    background: #303030;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.contenedor input{
+    margin: 0.5rem;
+}
