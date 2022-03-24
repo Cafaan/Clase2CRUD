@@ -14,58 +14,63 @@
 <body>
 
     <!-- Navegacion -->
-    <nav class="navbar navbar-dar bg-dark">
-        <a href="navbar-brand" class="#">Productos</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a href="#" class="navbar-brand">Productos</a>
     </nav>
 
     <!-- Navegacion -->
-    <nav class="navbar navbar-dar bg-dark">
-        <a href="navbar-brand" class="#">Productos app</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a href="#" class="navbar-brand">Productos app</a>
     </nav>
 
-    <div class="contenedor">
-        <!-- Aplicacion -->
-        <div class="columna medida_columna">
+    <div class="d-flex justify-content-center">
 
-            <!-- Formulario -->
-            <div class="medida-1">
+        <div class="contenedor col-6 ">
+            <!-- Aplicacion -->
+            <div class="columna medida_columna">
 
-                <div class="tarjeta">
+                <!-- Formulario -->
+                <div class="medida-1">
 
-                    <div class="tarjeta-header">
+                    <div class="tarjeta">
 
-                        <h4>Agregar Producto</h4>
+                        <div class="tarjeta-header">
 
+                            <h4>Agregar Producto</h4>
+
+                        </div>
+                        <form class="tarjet-body" action="" id="producto-formulario">
+                            <div class="grupo-formulario">
+                               <label for="" class="contedor__label"></label>
+                                <input type="text" id="nombre" placeholder="Nombre del producto"
+                                    class="Control-formulario">
+
+                            </div>
+                            <div class="grupo-formulario">
+
+                                <input type="number" id="precio" step="0.01" placeholder="Precio del producto"
+                                    class="Control-formulario">
+
+                            </div>
+
+                            <div class="grupo-formulario">
+
+                                <input type="number" id="año" step="1" value="2022" class="Control-formulario">
+
+                            </div>
+
+                            <input type="submit" value="Guardar" class="btn btn-primary c-wt" id="btn">
+
+                        </form>
                     </div>
-                    <form class="tarjet-body" action="" id="producto-formulario">
-                        <div class="grupo-formulario">
 
-                            <input type="text" id="nombre" placeholder="Nombre del producto" class="Control-formulario">
-
-                        </div>
-                        <div class="grupo-formulario">
-
-                            <input type="number" id="precio" step="0.01" placeholder="Precio del producto"
-                                class="Control-formulario">
-
-                        </div>
-
-                        <div class="grupo-formulario">
-
-                            <input type="number" id="año" step="1" value="2022" class="Control-formulario">
-
-                        </div>
-
-                        <input type="submit" value="Guardar" class="btn btn-primario btn-bloque">
-
-                    </form>
                 </div>
 
-            </div>
-
-            <div id="producto-lista" class="medida-3">
+                <div id="producto-lista" class="medida-3">
 
 
+
+                </div>
 
             </div>
 
@@ -76,5 +81,4 @@
     <script src="app.js" type="module"></script>
 </body>
 
-</html>   
-
+</html>
